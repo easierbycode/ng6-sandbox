@@ -1,5 +1,4 @@
 import { Component, ChangeDetectorRef } from '@angular/core';
-import { NavController } from 'ionic-angular';
 import { trigger, state, style, animate, transition } from '@angular/animations';
  
 @Component({
@@ -44,7 +43,7 @@ export class HomePage {
     itemsInCart: Object[] = [];
     cartBadgeState: string = 'idle';
  
-    constructor(private navCtrl: NavController, private changeDetector: ChangeDetectorRef) {
+    constructor(private changeDetector: ChangeDetectorRef) {
  
         this.items = [
             {title: 'Something', quantityInCart: 0, addButtonState: 'idle'},
